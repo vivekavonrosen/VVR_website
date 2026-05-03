@@ -1,66 +1,58 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 export default function Community() {
   return (
     <section id="community" className="bg-brand-paper py-28 lg:py-40">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <FadeIn>
-          <div className="relative bg-brand-purple-deep text-brand-paper grain overflow-hidden px-8 sm:px-12 lg:px-20 py-16 lg:py-24">
-            <div className="relative grid lg:grid-cols-5 gap-10 lg:gap-16 items-center">
-              <div className="lg:col-span-3">
-                <p className="text-brand-gold text-xs md:text-sm tracking-[0.3em] uppercase mb-6">
-                  Prefer to start with community?
-                </p>
-                <h2 className="font-display tracking-tight text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
-                  Women&apos;s Technology Integration Collaborative
-                </h2>
-                <p className="text-brand-paper/80 text-lg leading-relaxed max-w-lg">
-                  A lower-commitment entry point. WTIC Free is where you
-                  connect, learn, and explore what&apos;s possible. WTIC Pro
-                  adds live training, practical tools, full resources, and
-                  implementation help — a strong place to start before
-                  stepping into private coaching.
-                </p>
-              </div>
+          <p className="text-brand-purple text-xs md:text-sm tracking-[0.3em] uppercase mb-6">
+            Prefer to start with community?
+          </p>
+          <h2 className="font-display tracking-tight text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-8">
+            Women&apos;s Technology Integration Collaborative
+          </h2>
+          <p className="text-brand-ink/80 text-lg leading-relaxed mb-10 max-w-lg">
+            A lower-commitment entry point. WTIC Free is where you connect,
+            learn, and explore what&apos;s possible. WTIC Pro adds live
+            training, practical tools, full resources, and implementation help —
+            $97 a month or $697 a year. A strong place to start before stepping
+            into private coaching.
+          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-5">
+            <a
+              href="https://www.skool.com/womens-tech-collaborative-2106/about"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand-gold uppercase tracking-widest text-xs hover:text-brand-purple transition"
+            >
+              Join WTIC Free →
+            </a>
+            <a
+              href="https://www.skool.com/womens-tech-collaborative-2106/about"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center border border-brand-gold text-brand-purple uppercase tracking-widest text-sm px-6 py-3 hover:bg-brand-gold hover:text-brand-purple-deep transition w-fit"
+            >
+              Upgrade to WTIC Pro →
+            </a>
+          </div>
+        </FadeIn>
 
-              <div className="lg:col-span-2 lg:border-l lg:border-brand-gold/30 lg:pl-12">
-                <div className="space-y-8">
-                  <div>
-                    <p className="font-display text-brand-gold text-3xl md:text-4xl tracking-tight">
-                      WTIC Free
-                    </p>
-                    <p className="text-brand-paper/70 mt-1">
-                      Connect, learn, explore.
-                    </p>
-                    <a
-                      href="https://www.skool.com/womens-tech-collaborative-2106/about"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-block mt-3 text-brand-gold uppercase tracking-widest text-xs hover:text-brand-paper transition"
-                    >
-                      Join free →
-                    </a>
-                  </div>
-
-                  <div>
-                    <p className="font-display text-brand-gold text-3xl md:text-4xl tracking-tight">
-                      WTIC Pro
-                    </p>
-                    <p className="text-brand-paper/70 mt-1">
-                      $97 / month or $697 / year.
-                    </p>
-                    <a
-                      href="https://www.skool.com/womens-tech-collaborative-2106/about"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center mt-4 border border-brand-gold text-brand-gold uppercase tracking-widest text-xs px-5 py-2.5 hover:bg-brand-gold hover:text-brand-purple-deep transition"
-                    >
-                      Upgrade to Pro →
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <FadeIn delay={0.1}>
+          <div className="relative aspect-[5/4] w-full">
+            <Image
+              src="/images/Viv community.jpg"
+              alt="Viveka with the WTIC community at a retreat"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+            <span
+              aria-hidden
+              className="absolute left-3 -bottom-3 right-0 h-px bg-brand-gold translate-x-3"
+              style={{ width: "calc(100% - 12px)" }}
+            />
           </div>
         </FadeIn>
       </div>
