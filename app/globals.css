@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-purple: #571f81;
+  --brand-purple-soft: #3d1559;
+  --brand-purple-deep: #2a0e3d;
+  --brand-gold: #dfb24a;
+  --brand-teal: #2c97af;
+  --brand-ink: #0f0a14;
+  --brand-paper: #faf7f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--brand-paper);
+  color: var(--brand-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle SVG noise overlay for dark sections. Apply with class="grain" */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+.gold-rule {
+  display: inline-block;
+  height: 1px;
+  background-color: var(--brand-gold);
+}
+
+.outline-numeral {
+  -webkit-text-stroke: 1.5px var(--brand-gold);
+  color: transparent;
+}
