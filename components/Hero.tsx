@@ -44,7 +44,7 @@ export default function Hero() {
             }}
           />
           <Image
-            src="/images/hero-viveka.png"
+            src="/images/photo-looking-up-2.png"
             alt="Viveka von Rosen"
             fill
             priority

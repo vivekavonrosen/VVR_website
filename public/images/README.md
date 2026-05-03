@@ -1,12 +1,17 @@
-# Image assets needed
+# Image assets
 
-Drop these files into `/public/images/` before deploy. Components reference them
-directly via `next/image` and the build will fail at runtime if any are missing.
+These exact filenames must be present at deploy time:
 
-| Filename                | Source upload                                   | Used in              |
-| ----------------------- | ----------------------------------------------- | -------------------- |
-| `hero-viveka.png`       | `No_background_hands_outstretched.png`          | Hero section         |
-| `viv-orange-couch.jpg`  | `062823_PICZ_-_PORTRAITS-2093.JPG`              | Origin section       |
-| `viv-with-client.jpg`   | `062823_PICZ_-_PORTRAITS-2145.JPG` (laptop one) | Method section       |
-| `community.jpg`         | `Viv_and_Dana.jpg`                              | Community section    |
-| `viv-portrait-dark.jpg` | `__viv_grey_hair_ping.png`                      | Optional credibility |
+| Filename                            | Used in        |
+| ----------------------------------- | -------------- |
+| `photo-looking-up-2.png`            | Hero section   |
+| `viv couch.png`                     | Origin section |
+| `at desk with client laughing.JPG`  | Method section |
+
+Optional (not currently referenced):
+
+| Filename                | Notes                                |
+| ----------------------- | ------------------------------------ |
+| `photo-grey-hair-3.png` | Spare portrait, not used on site v1. |
+
+Filenames are case-sensitive on Vercel (Linux). Match exactly.

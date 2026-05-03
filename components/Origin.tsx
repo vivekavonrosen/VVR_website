@@ -8,7 +8,7 @@ export default function Origin() {
         <FadeIn>
           <div className="relative aspect-[4/5] w-full">
             <Image
-              src="/images/viv-orange-couch.jpg"
+              src="/images/viv couch.png"
               alt="Viveka von Rosen"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

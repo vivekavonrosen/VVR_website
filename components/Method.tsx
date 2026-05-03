@@ -69,7 +69,7 @@ export default function Method() {
           <FadeIn className="lg:col-span-1" delay={0.1}>
             <div className="relative aspect-[3/4] w-full">
               <Image
-                src="/images/viv-with-client.jpg"
+                src="/images/at desk with client laughing.JPG"
                 alt="Working session"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
