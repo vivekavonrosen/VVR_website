@@ -49,7 +49,7 @@ export default function Nav() {
           ))}
           <Link
             href="/book"
-            className="border border-brand-gold text-brand-gold uppercase tracking-widest text-sm px-5 py-2.5 hover:bg-brand-gold hover:text-brand-purple-deep transition"
+            className="no-underline border border-brand-gold text-brand-gold uppercase tracking-widest text-sm px-5 py-2.5 hover:bg-brand-gold hover:text-brand-purple-deep transition"
           >
             Book a Consultation
           </Link>
@@ -92,7 +92,7 @@ export default function Nav() {
             <Link
               href="/book"
               onClick={() => setOpen(false)}
-              className="mt-4 border border-brand-gold text-brand-gold uppercase tracking-widest text-sm px-6 py-3"
+              className="no-underline mt-4 border border-brand-gold text-brand-gold uppercase tracking-widest text-sm px-6 py-3"
             >
               Book a Consultation
             </Link>

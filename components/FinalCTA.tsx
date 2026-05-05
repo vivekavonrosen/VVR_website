@@ -15,7 +15,7 @@ export default function FinalCTA() {
           </p>
           <Link
             href="/book"
-            className="inline-flex items-center justify-center bg-brand-gold text-brand-purple-deep font-semibold uppercase tracking-widest text-sm px-10 py-5 hover:bg-brand-paper transition"
+            className="no-underline inline-flex items-center justify-center bg-brand-gold text-brand-purple-deep font-semibold uppercase tracking-widest text-sm px-10 py-5 hover:bg-brand-paper transition"
           >
             Book a Consultation
           </Link>
