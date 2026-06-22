@@ -3,7 +3,9 @@ import { Bebas_Neue, Lato } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
-const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+// GTM container ID. Defaults to the production container; can be overridden
+// per-environment via the NEXT_PUBLIC_GTM_ID env var (e.g. in Vercel).
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-MBT56NQB";
 
 const bebas = Bebas_Neue({
   weight: "400",
